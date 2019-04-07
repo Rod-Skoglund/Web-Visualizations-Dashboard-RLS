@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web_Visualization_Dashboard_RLS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="navbar">
+      <a class="nav-item nav-pill nav-heading" href="index.html"><h3>Latitude</h3></a>
+      <div class="justify-content-end">
+        <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="plots.html">plots</a>
+                <a class="dropdown-item" href="#">Max Temperatures</a>
+                <a class="dropdown-item" href="#">Humidity</a>
+                <a class="dropdown-item" href="#">Cloudiness</a>
+                <a class="dropdown-item" href="#">Wind Speed</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <section class="row">
+      <article class="col-md-8">
+        <h3>Summary of Latitude vs. X</h3>
+        <img class="img-responsive" src="./Resources/assets/images/MaxT.png">
+        <p>
+          The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+          To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset of 
+          over 500 cities. 
+        </p>
+        <p>
+          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. Latitude. 
+          Factors we looked at included: temperature, cloudiness, windseed and humidity. This site provides the 
+          source data and visualizations created as part of the analysis, as well as explanations and descriptions 
+          of any trends and correlations witnessed. 
+        </p>
+      </article>
+      <div class="col-md-4">
+          <h3>Visualizations</h3>
+          <div>
+              <img class="img-responsive img-4by4" src="./Resources/assets/images/MaxT.png">
+              <img class="img-responsive img-4by4" src="./Resources/assets/images/Humidity.png">
+              <img class="img-responsive img-4by4" src="./Resources/assets/images/Cloudiness.png">
+              <img class="img-responsive img-4by4" src="./Resources/assets/images/WindSpeed.png">
+          </div>
+      </div>
+      <section>
+
+      </section>
+    </section>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
